@@ -27,7 +27,6 @@ public class BankConsumerApp {
 		
 		System.out.println("Ending balance with simple interest: " + formatPrint(simpleInterest));
 		System.out.println("Ending balance with compound interest (monthly): " + formatPrint(compoundInterest));
-		formatPrint(compoundInterest);
 		
 	}
 	
