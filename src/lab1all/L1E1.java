@@ -1,4 +1,4 @@
-package Lab1;
+package lab1all;
 
 // calculate the area and perimeter of a rectangle
 public class L1E1 {
