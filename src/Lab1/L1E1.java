@@ -1,7 +1,7 @@
 package Lab1;
 
 // calculate the area and perimeter of a rectangle
-public class Exercise1 {
+public class L1E1 {
 
 	public static void main(String[] args) {
 		System.out.println(perimeterRect(3, 4)); // expected 14

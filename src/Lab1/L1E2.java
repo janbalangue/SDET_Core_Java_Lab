@@ -1,6 +1,6 @@
 package Lab1;
 
-public class Exercise2 {
+public class L1E2 {
 
 	public static void main(String[] args) {
 		int num1 = 6;
