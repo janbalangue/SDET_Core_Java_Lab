@@ -1,6 +1,6 @@
 package Lab1;
 
-public class Exercise3 {
+public class L1E3 {
 	public static void main(String[] args) {
 		System.out.println(quotient(144, 12)); // 12
 		System.out.println(remainder(55, 7)); // expected 6
