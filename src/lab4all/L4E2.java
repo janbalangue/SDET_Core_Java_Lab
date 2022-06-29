@@ -1,7 +1,5 @@
 package lab4all;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
-
 public class L4E2 {
 	
 	public static void main(String[] args) {
