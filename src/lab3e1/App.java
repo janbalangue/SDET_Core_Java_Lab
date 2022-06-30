@@ -3,7 +3,7 @@ package lab3e1;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class BankConsumerApp {
+public class App {
 
 	private static final double principal = 10000.00;
 	private static final double rate = 3.875;
