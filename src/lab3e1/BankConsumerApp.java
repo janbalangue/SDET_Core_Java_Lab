@@ -12,27 +12,23 @@ public class BankConsumerApp {
 	public static void main(String[] args) {
 		
 		principal = 10000.00;
-		rate = .03875;
+		rate = 3.875;
 		term = 2;
 			
 		SimpleBank simpleBank = new SimpleBank();
 		CompoundBank compoundBank = new CompoundBank();
 		
-		double simpleInterest = simpleBank.getInterest(principal, rate, term);
-		double compoundInterest = compoundBank.getInterest(principal, rate, term);
+		NumberFormat format = NumberFormat.getCurrencyInstance(Locale.US);
+		System.out.println("Principal: " + format.format(principal));
+		System.out.println("Rate: " + rate + " percent");
+		System.out.println("Term (years): " + term);
 		
-		System.out.println("Principal: " + formatPrint(principal));
-		System.out.println("Rate: " + rate * 100 + " percent");
-		System.out.println("Term in years: " + term);
+		String simpleInterest = simpleBank.getInterest(principal, rate, term);
+		String compoundInterest = compoundBank.getInterest(principal, rate, term);
 		
-		System.out.println("Ending balance with simple interest: " + formatPrint(simpleInterest));
-		System.out.println("Ending balance with compound interest (monthly): " + formatPrint(compoundInterest));
+		System.out.println("\nEnding balance with simple interest: " + simpleInterest);
+		System.out.println("Ending balance with compound interest (monthly): " + compoundInterest);
 		
 	}
 	
-	public static String formatPrint(double value) {
-		NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.US);
-		return formatter.format(value);
-	}
-
 }
