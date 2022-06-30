@@ -5,15 +5,11 @@ import java.util.Locale;
 
 public class BankConsumerApp {
 
-	private static double principal;
-	private static double rate;
-	private static int term;
+	private static final double principal = 10000.00;
+	private static final double rate = 3.875;
+	private static final int term = 2;
 	
 	public static void main(String[] args) {
-		
-		principal = 10000.00;
-		rate = 3.875;
-		term = 2;
 			
 		SimpleBank simpleBank = new SimpleBank();
 		CompoundBank compoundBank = new CompoundBank();
