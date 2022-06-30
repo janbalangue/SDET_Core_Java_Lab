@@ -3,12 +3,12 @@ package lab3e1;
 public class SimpleBank implements Bank {
 
 	@Override
-	public double getInterest(double principal, double rate, int term) {
+	public String getInterest(double principal, double rate, int term) {
 		if (term == 0) {
 			System.out.println("Term is " + term);
-			return principal;
+			return formatPrint(principal);
 		}
-		return principal * (1 + rate * term);
+		return formatPrint(principal * (1 + percentToDecimal(rate) * term));
 
 	}
 	
