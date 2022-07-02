@@ -14,6 +14,7 @@ public class L4E3 {
 		try {
 			num = scanner.nextDouble();
 			checkSign(num);
+			scanner.close();
 		} catch (Exception e) {
 			System.out.println("Invalid input");
 			return;

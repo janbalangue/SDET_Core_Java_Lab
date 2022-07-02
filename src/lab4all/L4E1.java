@@ -1,13 +1,10 @@
 package lab4all;
 
-import java.util.function.IntPredicate;
-
 public class L4E1 {
 
 	public static void main(String[] args) {
 		
 		int[] nums = {5434, 3245, 4562};
-//		int[] nums = {1,1,1};
 		
 		String sentence = "The largest number is ";
 		
